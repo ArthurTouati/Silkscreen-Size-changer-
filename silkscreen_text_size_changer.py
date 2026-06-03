@@ -20,6 +20,7 @@
 
 import pcbnew
 import sys
+import os
 
 # Try importing wxPython for the user interface, with a fallback if running headlessly/outside KiCad
 try:
@@ -177,7 +178,7 @@ class SilkscreenTextSizeChanger(pcbnew.ActionPlugin):
         self.category = "Modify PCB"
         self.description = "Changes width, height, and thickness of text on Silkscreen layers (F.SilkS and B.SilkS)"
         self.show_button_in_toolbar = True
-        self.icon_file_name = ""
+        self.icon_file_name = os.path.join(os.path.dirname(__file__), 'icon.png')
 
     def Run(self):
         # Fallback variables easily editable at top of Run() method
