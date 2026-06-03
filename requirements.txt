@@ -1,0 +1,5 @@
+# Dependencies for the KiCad Silkscreen Text Size Changer
+# Note: KiCad's internal Python environment (pcbnew) comes with these dependencies pre-installed.
+# You typically do NOT need to manually run `pip install -r requirements.txt` if you are using the plugin inside KiCad.
+
+wxPython>=4.0.0
